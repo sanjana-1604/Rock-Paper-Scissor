@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+  <h1 id="title">
+    Rock Paper & Scissor
+  </h1>
+  <p id="detail">
+    Play the game with computer by selecting your option from Rock, Paper & Scissor.
+    The computer will select its option and both of your options will be compare to make the decision.
+    Winner will be declare after 5 rounds.
+  </b>Enjoy the game.
+  </p>
+  <figure id="rock-img" onclick="ImageClick(0, 'ur-choice')">
+    <img class="imgs" src="Img/rock.png">
+    <figcaption>Rock</figcaption>
+  </figure>
+
+  <figure id="paper-img" onclick="ImageClick(1, 'ur-choice')">
+      <img class="imgs" src="Img/paper.png">
+      <figcaption>Paper</figcaption>
+  </figure>
+ <figure id="scissor-img" onclick="ImageClick(2, 'ur-choice')">
+   <img class="imgs" src="Img/scissors.png">
+  <figcaption>Scissor</figcaption>
+</figure>
+
+<p id="choice-declaration">You choose <span id="ur-choice">.......</span> & Computer choose <span id="Computer-choice">.....
+</span></p>
+
+  <div class="score-board">
+    <h3 >Your Score</h3>
+    <h1 id="ur-score">0</h1>
+  </div>
+  <div class="score-board" id="comp-score">
+    <h3 >Computer Score</h3>
+    <h1 id="Com-score">0</h1>
+  </div>
+
+  <div>
+  </div>
+
+</body>
+</html>

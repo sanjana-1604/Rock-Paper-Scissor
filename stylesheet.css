@@ -1,0 +1,94 @@
+
+
+#title
+{
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  color: #007399;
+  font-size: 60px;
+
+}
+#detail
+{
+  text-align: center;
+  color: #006080;
+  font-family: 'Courgette', cursive;
+  font-size: 18px;
+}
+#ur-score #Com-score
+{
+  color: #006080;
+  font-family: 'Courgette', cursive;
+  font-size: 14px;
+}
+
+#rock-img, #paper-img, #scissor-img
+{
+  display:inline-block;
+  position:relative;
+  left: 30%;
+  margin:40px;
+}
+figcaption, #choice-declaration, .score-board
+{
+  color: #006080;
+  font-family: 'Courgette', cursive;
+  font-size: 14px;
+  text-align: center;
+}
+#choice-declaration
+{
+  font-size:18px;
+}
+.score-board
+{
+  display:inline-block;
+  position:relative;
+  left:30%;
+}
+.score-board h1, .imgs
+{
+  border:solid 1px #006080;
+}
+#comp-score
+{
+  margin-left:280px;
+}
+
+.imgs
+{
+  padding: 10px;
+  margin:5px;
+}
+p span{
+  font-weight: bold;
+}
+#MsgDiv
+{
+  position:relative;
+  left:25%;
+  top:-450px;
+  width:50em;
+  height:20em;
+  background-color:rgba(51, 204, 255, 1);
+  color: #fff;
+  font-family: 'Courgette', cursive;
+  font-size: 14px;
+  text-align: center;
+  border-radius:20px;
+  border:solid 1px #006080;
+
+}
+#MsgDivBtn1
+{
+  position:relative;
+  top:200px;
+  width:10em;
+  height:2em;
+  border-radius:40px;
+  border:solid 1px #006080;
+  color: #fff;
+  font-family: 'Courgette', cursive;
+  font-size: 18px;
+  background-color: #002633;
+}
