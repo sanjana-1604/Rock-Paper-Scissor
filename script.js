@@ -136,8 +136,9 @@ function MyAlert(Message,Btn1, Btn2)
     document.getElementById("MsgDiv").appendChild(BtnExit);
     BtnExit.onclick = function()
     {
-      window.open('https://sanjana-1604.github.io/Rock-Paper-Scissor/', '_self', '');
-      window.close();
+      /*window.open('https://sanjana-1604.github.io/Rock-Paper-Scissor', '_self', '');
+      window.close();*/
+      open(location, '_self').close();
     }
 
   }
