@@ -138,7 +138,7 @@ function MyAlert(Message,Btn1, Btn2)
     {
       /*window.open('https://sanjana-1604.github.io/Rock-Paper-Scissor', '_self', '');
       window.close();*/
-      open(location, '_self').close();
+      open('https://sanjana-1604.github.io/Rock-Paper-Scissor', '_self').close();
     }
 
   }
