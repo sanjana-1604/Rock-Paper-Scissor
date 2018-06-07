@@ -68,27 +68,46 @@ p span{
   position:relative;
   left:25%;
   top:-450px;
-  width:50em;
-  height:20em;
+  width:700px;
+  height:250px;
   background-color:rgba(51, 204, 255, 1);
   color: #fff;
   font-family: 'Courgette', cursive;
-  font-size: 14px;
-  text-align: center;
+  font-size: 30px;
+  text-align:center;
   border-radius:20px;
   border:solid 1px #006080;
+
 
 }
 #MsgDivBtn1
 {
   position:relative;
   top:200px;
-  width:10em;
-  height:2em;
+  left:-40px;
+
+}
+#MsgDivBtnNewGame , #MsgDivBtn1, #MsgDivBtnExit
+{
   border-radius:40px;
   border:solid 1px #006080;
   color: #fff;
   font-family: 'Courgette', cursive;
   font-size: 18px;
-  background-color: #002633;
+  background-color:#0086b3;
+  width:10em;
+  height:2em;
+}
+#MsgDivBtnNewGame
+{
+  position:relative;
+  top:160px;
+  left:-100px;
+
+}
+#MsgDivBtnExit
+{
+  position:relative;
+  top:160px;
+  left:60px;
 }

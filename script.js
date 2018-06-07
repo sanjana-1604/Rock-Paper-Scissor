@@ -97,16 +97,6 @@ function displayScore(whoWon)
     document.getElementById("ur-score").innerHTML = Player_Score;
   }
 
-  if(Player_Score == 5)
-  {
-  alert("You won the Game :)");
-  ResetValues();
-}
-  else if(Computer_Score ==5)
-  {
-  alert("Computer won the Game :)");
-  ResetValues();
-}
 }
 function ResetValues()
 {
@@ -124,22 +114,58 @@ function MyAlert(Message,Btn1, Btn2)
   var Txt = document.createTextNode(Message);
   MsgBox.appendChild(Txt);
   document.body.appendChild(MsgBox);
-  var body = document.getElementsByTagName("body");
-  body[0].style.opacity = "0.5";
+  var body = document.getElementById("myBody");
+  body.style.opacity = "0.5";
   MsgBox.style.opacity = "1";
-
-  if(Btn1)
+  if(Btn2)
   {
-    var Btn1 = document.createElement("button");
-    Btn1.setAttribute("id", "MsgDivBtn1");
+    var BtnNewGame = document.createElement("button");
+    BtnNewGame.setAttribute("id", "MsgDivBtnNewGame");
      Txt = document.createTextNode("Ok");
-    Btn1.appendChild(Txt);
-    document.getElementById("MsgDiv").appendChild(Btn1);
-    Btn1.onclick = function()
+    BtnNewGame.appendChild(Txt);
+    document.getElementById("MsgDiv").appendChild(BtnNewGame);
+    BtnNewGame.onclick = function()
     {
-      body[0].style.opacity = "1";
-      MsgBox.style.display = "none";
+      body.style.opacity = "1";
+      MsgBox.parentNode.removeChild(MsgBox);
+    }
+    var BtnExit = document.createElement("button");
+    BtnExit.setAttribute("id", "MsgDivBtnExit");
+     Txt = document.createTextNode("Exit");
+    BtnExit.appendChild(Txt);
+    document.getElementById("MsgDiv").appendChild(BtnExit);
+    BtnExit.onclick = function()
+    {
+      window.close();
+    }
+
+  }
+  else
+  {
+    var BtnOk = document.createElement("button");
+    BtnOk.setAttribute("id", "MsgDivBtn1");
+     Txt = document.createTextNode("Ok");
+    BtnOk.appendChild(Txt);
+    document.getElementById("MsgDiv").appendChild(BtnOk);
+    BtnOk.onclick = function()
+    {
+      body.style.opacity = "1";
+      MsgBox.parentNode.removeChild(MsgBox);
+      var msgtxt;
+      if(Player_Score == 5)
+      {
+        msgtxt = "You won the Game. Press OK to continue";
+      MyAlert(msgtxt, 1, 2);
+      ResetValues();
+    }
+      else if(Computer_Score ==5)
+      {
+        msgtxt = "Computer won the Game. Press OK to continue"
+      MyAlert(msgtxt, 1, 2);
+      ResetValues();
+    }
     }
   }
+
 
 }
